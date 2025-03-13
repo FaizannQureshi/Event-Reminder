@@ -1,0 +1,14 @@
+How to run this project 
+
+1. Download and extract the zip file.
+2. Run 'npm install' in both frontend and backend folders to install the required dependencies 
+3. Setup mongodb locally on your system, create a event-reminder database and in that create a collection named "reminders" to store the data.
+4. Generate an app password for gmail from your google account security settings.
+5. Create a .env file in your backend folder with the following details:
+    PORT=5000
+    MONGODB_URI=mongodb://localhost:27017/event-reminder  
+    EMAIL_SERVICE=gmail
+    EMAIL_USER= your@email.com
+    EMAIL_PASS= the password generated from the 4th step
+6. Open a terminal, cd to backend folder, run "node server.js", this will start the backend server.
+7. Cd to frontend folder, run "npm start", this will run your app locally on browser.
